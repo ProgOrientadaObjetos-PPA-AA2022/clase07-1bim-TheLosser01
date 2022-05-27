@@ -10,12 +10,31 @@ package paquete6;
  * @author reroes
  */
 public class Hospital {
-    String nombre;
+    String nombreHospital;
     int numeroCamas;
     double presupuesto;
+    
+    public void establecerNombre(String n){
+        nombreHospital = n;
+    }
+    
+    public void establecerNumCamas(int c){
+        numeroCamas = c;
+    }
+    
+    public void establecerPresupuesto(double c){
+        presupuesto = c;
+    }
+    
+    public String obtenerNombre(){
+        return nombreHospital;
+    }
+    
+    public int obtenerNumCamas(){
+        return numeroCamas;
+    }
+    
+    public double obtenerPresupuesto(){
+        return presupuesto;
+    }
 }
-
-/* 
-    Agregar valor de objetos de tipo Hospital a un archivo
-    Y leer el archivo
-*/
